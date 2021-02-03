@@ -1,0 +1,21 @@
+name: Notes
+version: 0.0.1
+main: me.avixk.Notes.Main
+api-version: 1.16
+description: Type /note <message> to create a note.
+authors: [avixk]
+load: POSTWORLD
+softdepend:
+  - Vault
+commands:
+  note:
+    usage: /note <message>
+    description: Get a note with your message on it
+  anonnote:
+    usage: /anonnote <message>
+    description: Get an anonymous note with your message on it
+permissions:
+  notes.use:
+    default: not op
+  notes.use.anon:
+    default: not op

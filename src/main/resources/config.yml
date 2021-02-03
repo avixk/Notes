@@ -1,0 +1,31 @@
+
+cost:
+  normal:
+    enabled: false
+    amount: 0.01
+  anonymous:
+    enabled: false
+    amount: 0.01
+
+messages:
+  cost_nodrop: '&e$%cost% &awas taken from your balance.'
+  cost_drop: '&e$%cost% &awas taken from your balance. &cYour note was dropped on the ground!'
+  nocost_nodrop: '&aObtained note!'
+  nocost_drop: '&cYour note was dropped on the ground!'
+  cant_afford_normal: '&cYou need &e%cost% to get a note.'
+  cant_afford_anonymous: '&cYou need &e%cost% to get an anonymous note.'
+
+note_material: PAPER
+note_default_amount: 1
+anon_title: '&fAnonymous Note'
+note_name: '&fNote from %player%'
+note_lore: '&7 %message%'
+note_last_lore_line: '&e%time%'
+text_wrap_width: 50 # width in characters of the lore lines
+time_format: 'MMM/dd/yyyy - HH:mm:ss'
+
+blacklisted_lore: # if anything below is in the message, it will not be created. (some plugins use the lore to confirm authenticity)
+  - 'This unit is being tracked.'
+  - 'This key will unlock a'
+  - 'Authentic'
+blacklisted_lore_message: '&cSorry, your message contains a string of characters that would be problematic. Try again with a less suspicious message.'
